@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cribs And Shells</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logs">      
+            <img class ="logo" src="img/logo4.png" alt="">
+            <h1>Cribs&Shells <span>Real Estates!</span></h1>
+        </div>  
+
+        <nav class ="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="prospect.html">Prospect</a>
+            <a href="structures.html">Structures</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <div id="menu-btn" class= "fas fa-bars"></div>
+    </header>
+    
+    <h1 class="heading">Great <span>Projects beyond ordinary</span></h1>
+   
+    <section class="home" id ="home">
+
+
+        <div class="image"  data-aos-delay="100" data-aos="zoom-in" data-aos-duration="900">
+        <img src ="img/hs4.jpg" alt="">
+        </div>
+
+            <div class="content"  data-aos-delay="100" data-aos="zoom-in" data-aos-duration="900">
+                <h3>What is your idea of HEAVEN?.</h3>
+                <p> Your heaven is that place you can describe as your home
+                    A beautiful place you can relax in, and find ultimate
+                    peace, joy and security.                    
+                </p>
+                <hr>
+
+                <p> We can aid you to have a beautiful home and lifen describe as your home
+                    Talk to us, lets help out. choose a house and area and we guarantee
+                    we will get back to you shortly.                  
+                </p>
+                <a href="#" class ="btn">Your home <span class="fas fa-chevron-right"></span></a>
+            
+            </div>
+
+
+            <div class="content"  data-aos-delay="100" data-aos="slide-right" data-aos-duration="900">
+                <h3>Location.</h3>
+                <p>The most important thing about property.
+                    Real estate is great, but where is is located?
+                    Let our team get you the most desired location.      distinctio, praesentium laboriosam quam repudiandae?
+                </p>
+                
+            </div>
+
+
+                <div class="content" ng-app="apptwo" ng-controller = "apptwoCtr" ng-init= "fincome =0; mincome=0;"  data-aos-delay="100" data-aos="slide-left" data-aos-duration="900">
+                        <div class="list">
+                            <p style ="text-align: left;" > Choose house type <input type ="text" placeholder="name your house" ng-model ="houseType"></p>
+                            
+                            <ul style="height: 10em; text-align: center; font-size: 1.3rem; color:#0c1602; list-style: none; padding-bottom: 3rem;">
+
+                                <li ng-repeat="house in houses | filter : houseType">
+                                    <a href=""> {{ house }}</a>
+                                </li> 
+                            </ul>       
+                            
+                        </div>
+
+            
+                
+
+                    <div class="list"  data-aos-delay="100" data-aos="zoom-in" data-aos-duration="900">
+                    <p style ="text-align: right;" > Choose lease type <input type ="text" placeholder="name your lease" ng-model ="leaseType"></p>
+                    
+                    <ul style="height: 10em; font-size: 1.3rem; color:#0c1602; text-align: center; list-style: none; padding-bottom: 3rem;">
+
+                        <li ng-repeat="lease in leases | filter : leaseType">
+                        <a href="./contact.html"> {{ lease }}</a>
+                        </li> 
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="content"  data-aos-delay="100" data-aos="slide-right" data-aos-duration="900">
+                    <h3>A new Home.</h3>
+                    <p>Are you looking to buy, rent or sell?
+                        We are ready to get you on a roll.
+                        We also offer maintenance at affordable cost. 
+                         
+                        </p>
+                    
+                </div>
+                <div class="image"  data-aos-delay="100" data-aos="flip-up" data-aos-duration="900">
+                    <img src ="img/hs9.jpg" alt="">
+                </div>
+           
+
+            
+
+            <div class="image"  data-aos-delay="100" data-aos="flip-down" data-aos-duration="900">
+                <img src ="img/hs5.jpg" alt="">
+             </div>
+
+
+             <div class="content"  data-aos-delay="100" data-aos="slide-right" data-aos-duration="900">
+                <h3>Learn More.</h3>
+                <p> Find out more about our range of houses here, make a great choice.
+                </p>
+                
+            </div>
+
+    </section>
+
+
+
+
+    <section class ="project" id="project">
+
+        
+        <div class="box-container"  data-aos-delay="50" data-aos="zoom-in" data-aos-duration="700">
+            <div class="box"  data-aos-delay="100" data-aos="slide-right" data-aos-duration="900">
+              
+                <div class="box1">
+                <img src ="img/hs3.jpg" alt=""> 
+                </div>
+
+                <h3>Choose your preferred design</h3>
+
+                <p>Would you like to make this selection?
+                    </p>
+                    <!-- <btn id ="bt1">More </btn> -->
+                    <btn id="show" class ="btn btn-success">Show</btn>
+            </div>
+
+
+            <div class="box"  data-aos-delay="100" data-aos="flip-down" data-aos-duration="900">
+                <div class="box2">
+                <img src ="img/hs2.jpg" alt="">
+            </div>
+                <h3>Plan your next homes</h3>
+                
+                <p>from the arrangements to setup and plans
+                    we have you covered.
+                </p>
+                    <a href="#" class="btn">More <span class ="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="box"  data-aos-delay="100" data-aos="flip-down" data-aos-duration="900">
+                <div class="box3">
+                <img src ="img/hs4.jpg" alt="">
+            </div>
+                <h3>Explore our designs</h3>
+                    
+                <p>There have been many designs to choose from, we got more here.
+                    </p>
+                    <a href="#" class="btn">More <span class ="fas fa-chevron-right"></span></a>
+            </div>
+
+
+            <div class="box"  data-aos-delay="100" data-aos="slide-left" data-aos-duration="900">
+                <div class="box4">
+                <img src ="img/hs6.jpg" alt="">
+            </div>
+                <h3>We make it happen</h3>
+                
+
+                <p> Since her establishment in 1975, Cribs and shells have created more homes
+                    for families and couples than any other real estate firm in North America.
+                </p>
+                    <a href="#" class="btn">More <span class ="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="box"  data-aos-delay="100" data-aos="slide-right" data-aos-duration="900">
+               
+                <div class="box5">
+                <img src ="img/hs7.jpg" alt="">
+            </div>
+                <h3>See our Projects</h3>
+               
+
+                <p>A couple of our projects will get you drooling over our amazingwork and projects.
+                    we also got plans for futuristic designs.
+                </p>
+                    <a href="#" class="btn">More <span class ="fas fa-chevron-right"></span></a>
+            </div>
+
+
+            <div class="box" data-aos-delay="100" data-aos="flip-up" data-aos-duration="900">
+                <div class="box6">
+                <img src ="img/hs8.jpg" alt="">
+            </div>
+                <h3>Consult with the Engineers</h3>
+
+                <p>Our friendly and amazing engineers are always ready to offer help
+                    to you and free consultation at any time. 
+                    </p>
+                    <a href="#" class="btn">More <span class ="fas fa-chevron-right"></span></a>
+            </div>
+
+
+            <div class="box" data-aos-delay="100" data-aos="flip-up" data-aos-duration="900">
+                <div class="box7">
+                <img src ="img/hs9.jpg" alt="">
+                </div>
+                <h3>Explore our designs</h3>
+
+                <p>We are always available and willing to provide
+                    free tour and visits to our available listings.
+                    </p>
+                    <btn id ="bt1">More <span class ="fas fa-chevron-right"></span></btn>
+           
+                    <!-- <btn id="show" class ="btn btn-success">Show</btn> -->
+            
+                </div>
+
+            <div class="box"  data-aos-delay="100" data-aos="slide-left" data-aos-duration="900">
+                <div class="box8">
+                <img src ="img/hs10.jpg" alt="">
+                </div>
+
+                <h3>Homes are Beautiful</h3>
+
+                <p>Check out the beauty and sweetness of our homes.
+                    Our homes are definitely yours for the taking.
+                </p>
+                    <a href="#" class="btn">More <span class ="fas fa-chevron-right"></span></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer" data-aos-delay="100" data-aos="zoom-in" data-aos-duration="900">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>Links</h3>
+                <a href="home.html"><i class="fas fa-chevron-right"></i> Home </a>
+                <a href="about.html"><i class="fas fa-chevron-right"></i> About </a>
+                <a href="project.html"><i class="fas fa-chevron-right"></i> Project </a>
+                <a href="prospect.html"><i class="fas fa-chevron-right"></i> Prospect </a>
+                <a href="structures.html"><i class="fas fa-chevron-right"></i> Structures </a>
+                <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact </a>
+            </div>
+
+            <div class="box">
+                <h3>What we do</h3>
+                <a href="home.html"><i class="fas fa-chevron-right"></i> Building </a>
+                <a href="about.html"><i class="fas fa-chevron-right"></i> Land Acquisition </a>
+                <a href="project.html"><i class="fas fa-chevron-right"></i> Construction </a>
+                <a href="prospect.html"><i class="fas fa-chevron-right"></i> Sales </a>
+                <a href="structures.html"><i class="fas fa-chevron-right"></i> Property Maintenance </a>
+               
+            </div>
+
+            <div class="box">
+                <h3>Contact</h3>
+                <a href="home.html"><i class="fas fa-envelope"></i> cribsandshells@gmail.com </a>
+                <a href="about.html"><i class="fas fa-phone"></i> +23430437676 </a>
+                <a href="project.html"><i class="fas fa-map-marker-alt"></i> 234 Dundas Toronto L2S3Y2 </a>
+                
+            </div>
+
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="home.html"><i class="fab fa-instagram"></i> instagram </a>
+                <a href="about.html"><i class="fab fa-facebook-f"></i> Facebook </a>
+                <a href="project.html"><i class="fab fa-twitter"></i> Twitter </a>
+                <a href="prospect.html"><i class="fab fa-whatsapp"></i> Whatsapp </a>
+                <a href="structures.html"><i class="fab fa-linkedin"></i> Linkedin </a>
+               
+            </div>
+        </div>
+
+        <div class="credit">Designed by <span> Adeniyi Ladenegan </span> | &copy 2021</div>
+    </section>
+
+    <script src="script.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+
+ 

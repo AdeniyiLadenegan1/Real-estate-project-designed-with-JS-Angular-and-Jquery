@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cribs And Shells</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600&display=swap" rel="stylesheet">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+
+  
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="script.js" defer></script>
+  
+
+</head>
+<body>
+    <header class="header">
+        
+        <div class="logs">      
+            <img class ="logo" src="img/logo4.png" alt="">
+            <h1>Cribs&Shells <span>Real Estates!</span></h1>
+        </div>  
+
+        <nav class ="navbar"><div class="logs">      
+          
+        </div>  
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="prospect.html">Prospect</a>
+            <a href="structures.html">Structures</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div id="menu-btn" class= "fas fa-bars"></div>
+    </header>
+    
+<section class="contact" id="contact">
+    <h1 class="heading" data-aos="slide-left" data-aos-duration="1000"> <span>Talk </span>to us today</h1>
+
+        <div class="row" data-aos="zoom-in" data-aos-duration="800">
+        <div class="image"  data-aos="zoom-in" data-aos-duration="800">
+            <img src="img/hs1.jpg" alt="">
+        </div>
+
+    <form action = ""  data-aos="flip-down" data-aos-duration="1000">
+        <h3>Your next home</h3>
+       <p><input id="firstname" placeholder = "firstname" class ="box"></p>
+        <p><input id="lastname" placeholder = "lastname" class ="box"></p>
+        <p><input type="email" placeholder = "email" class ="box"></p>
+        <p><input type="number" placeholder = "phone" class ="box"></p>
+        <p></p><input id="buildingtype" placeholder = "buildingtype" class ="box"></p>
+        <p></p><input type="number" placeholder = "budget" class ="box"></p>
+        <p></p><input id="date" type="date" class ="box"></p>
+        <input id ="submit" type="text" value = "SEND" class ="mybtn">
+    </form>
+    <h2 class="word"></h2>
+  
+
+</div>
+</section>
+
+
+<section class="contact" id="contact" >
+    <h1 class="heading"  data-aos="zoom-in" data-aos-duration="1000"> <span>Contact </span> us today!</h1>
+    <h1>You could locate your new home here!</h1>
+    <div class="row" ng-app="appnew" ng-controller = "appnewCtr" ng-init="count1 =0; ">    
+       
+        <div class="sites" ng-mousemove="count1 = count1 + 1" data-aos-delay="200" data-aos="flip-down" data-aos-duration="1000">
+            <div class="image">
+        
+            <hr>  
+            <div id="map" data-aos-delay="200" data-aos="flip-up" data-aos-duration="1000"></div>
+    
+            <h1 class = "area">{{ count1 }} </h1>
+            <hr>        
+        </div>
+      
+       
+    </div>
+
+
+  <div class="myform">
+    <form action = "" >
+        <h3>Register Here</h3>
+        <p><input id="fullname" placeholder = "fullname" class ="box" required></p>
+        <p><input id="location" placeholder = "desired location" class ="box" required></p>
+        <p><input type="address" placeholder = "current address" class ="box" required></p>
+        <p><input type="number" placeholder = "Yearly income" class ="box" required></p>
+        <p><input type="buildingtype" placeholder = "buildingtype" class ="box" required></p>
+        <p><input type="number" placeholder = "family size" class ="box" required></p>
+        <!-- data-aos="flip-down" data-aos-duration="900" -->
+        <input id ="submit" type="text" value = "SIGNUP" class ="mybtn">
+    </form>
+    <h2 class="word2"></h2>
+    </div>
+
+</div>
+</section>
+
+
+
+
+   
+
+
+
+    <section class="home" id ="home">
+
+        <div class="image" data-aos-delay="100" data-aos="slide-right" data-aos-duration="800">
+        <img src ="img/hs6.jpg" alt="">
+        </div>
+
+        <div class="content"  data-aos="slide-left" data-aos-duration="800">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Non id earum ab 
+                excepturi! Aperiam nesciunt 
+                distinctio, praesentium laboriosam quam repudiandae?
+            </p>
+            <a href="#" class ="btn">Your home <span class="fas fa-chevron-right"></span></a>
+        
+        </div>
+
+
+           
+    
+            <div class="content" data-aos-delay="200" data-aos="slide-right" data-aos-duration="800">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Non id earum ab 
+                    excepturi! Aperiam nesciunt 
+                    distinctio, praesentium laboriosam quam repudiandae?
+                </p>
+                <a href="engineers.html" class ="btn">Click for more <span class="fas fa-chevron-right"></span></a>
+                
+            </div>
+
+            <div class="image" data-aos-delay="200" data-aos="slide-left" data-aos-duration="800" >
+                <img src ="img/hs7.jpg" alt="">
+             </div>
+
+    </section>
+
+
+    <section class="footer" data-aos-delay="200" data-aos="zoom-in" data-aos-duration="800">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>Links</h3>
+                <a href="home.html"><i class="fas fa-chevron-right"></i> Home </a>
+                <a href="about.html"><i class="fas fa-chevron-right"></i> About </a>
+                <a href="project.html"><i class="fas fa-chevron-right"></i> Project </a>
+                <a href="prospect.html"><i class="fas fa-chevron-right"></i> Prospect </a>
+                <a href="structures.html"><i class="fas fa-chevron-right"></i> Structures </a>
+                <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact </a>
+            </div>
+
+            <div class="box">
+                <h3>What we do</h3>
+                <a href="home.html"><i class="fas fa-chevron-right"></i> Building </a>
+                <a href="about.html"><i class="fas fa-chevron-right"></i> Land Acquisition </a>
+                <a href="project.html"><i class="fas fa-chevron-right"></i> Construction </a>
+                <a href="prospect.html"><i class="fas fa-chevron-right"></i> Sales </a>
+                <a href="structures.html"><i class="fas fa-chevron-right"></i> Property Maintenance </a>
+               
+            </div>
+
+            <div class="box">
+                <h3>Contact</h3>
+                <a href="home.html"><i class="fas fa-envelope"></i> cribsandshells@gmail.com </a>
+                <a href="about.html"><i class="fas fa-phone"></i> +23430437676 </a>
+                <a href="project.html"><i class="fas fa-map-marker-alt"></i> 234 Dundas Toronto L2S3Y2 </a>
+                
+            </div>
+
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="home.html"><i class="fab fa-instagram"></i> instagram </a>
+                <a href="about.html"><i class="fab fa-facebook-f"></i> Facebook </a>
+                <a href="project.html"><i class="fab fa-twitter"></i> Twitter </a>
+                <a href="prospect.html"><i class="fab fa-whatsapp"></i> Whatsapp </a>
+                <a href="structures.html"><i class="fab fa-linkedin"></i> Linkedin </a>
+               
+            </div>
+        </div>
+
+        <div class="credit">Designed by <span> Adeniyi Ladenegan </span> | &copy 2021</div>
+    </section>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
+
+
+
